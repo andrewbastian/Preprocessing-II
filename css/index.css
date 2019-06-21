@@ -1,8 +1,3 @@
-/* @media (min-width: 500px) {
-  h1 {
-    color: blue; */
-  }
-}
 button {
   background-color: #17A2B8;
   height: 40px;
@@ -195,9 +190,24 @@ header {
   padding-bottom: 1rem;
   margin: auto;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 h1 {
   display: flex;
   justify-content: flex-start;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+  }
 }
 a {
   margin-right: 3rem;
@@ -206,6 +216,17 @@ a {
 a:link {
   color: #212529;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .content-section {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .footer {
   width: 100%;
@@ -227,13 +248,23 @@ a:link {
 .home .content-section .busImg {
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .content-section .text-content {
+@media (max-width: 500px) {
+  .home .content-section .busImg {
+    width: 80%;
+  }
+}
+.home .content-section .busImg .text-content {
   width: 48%;
   padding-right: 1%;
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 90%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
