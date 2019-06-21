@@ -1,3 +1,8 @@
+/* @media (min-width: 500px) {
+  h1 {
+    color: blue; */
+  }
+}
 button {
   background-color: #17A2B8;
   height: 40px;
@@ -7,7 +12,7 @@ button {
   color: #FFFFFF;
   border-radius: 1rem;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
