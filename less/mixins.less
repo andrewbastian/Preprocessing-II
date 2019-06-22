@@ -1,1 +1,21 @@
 // Mixins in here
+// .a-tag-pmixin(@textdecor,@tcolor, @fontfam){
+//   text-decoration: @textdecor;
+//   color: @tcolor;
+//   font-family: @fontfam
+// }
+// a{
+//   .a-tag-pmixin(none, black,'Roboto', sans-serif)
+// }
+.btn-pmixin (@bgColor: @button-bg, @height: 40px, @width: 80%, @fontAlign: center, @fSize: 1.5rem, @fontColor: @white, @borderR: 1rem){
+  background-color: @bgColor;
+  height: @height;
+  width: @width;
+  text-align: @fontAlign;
+  font-size: @fSize;
+  color: @fontColor;
+  border-radius: @borderR
+}
+button{
+  .btn-pmixin();
+}
